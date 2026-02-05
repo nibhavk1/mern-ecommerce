@@ -1,0 +1,142 @@
+.profile-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 2rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.profile-info,
+.addresses-section,
+.quick-links {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.edit-btn {
+    padding: 0.5rem 1rem;
+    background: var(--background);
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.edit-btn:hover {
+    border-color: var(--primary-solid);
+    color: var(--primary-solid);
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.profile-details p {
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.profile-details strong {
+    color: var(--dark);
+    margin-right: 0.5rem;
+}
+
+.save-btn {
+    padding: 0.75rem 2rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.addresses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.address-card {
+    padding: var(--spacing-md);
+    background: var(--background);
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.address-card p {
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+}
+
+.default-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--success);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.delete-address-btn {
+    margin-top: var(--spacing-sm);
+    padding: 0.5rem;
+    background: var(--error);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: var(--transition);
+}
+
+.delete-address-btn:hover {
+    opacity: 0.9;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.quick-link {
+    padding: 0.75rem;
+    background: var(--background);
+    color: var(--dark);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.quick-link:hover {
+    background: var(--primary-solid);
+    color: var(--white);
+}

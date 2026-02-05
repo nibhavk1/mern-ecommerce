@@ -1,0 +1,147 @@
+.checkout-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 2rem;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: var(--spacing-lg);
+}
+
+.checkout-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.shipping-section {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.saved-addresses {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.address-option {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.address-option:has(input:checked) {
+    border-color: var(--primary-solid);
+    background: #f0f4ff;
+}
+
+.address-option input {
+    cursor: pointer;
+}
+
+.address-content p {
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+}
+
+.add-address-btn {
+    padding: 0.75rem;
+    background: var(--background);
+    border: 2px dashed var(--border);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.add-address-btn:hover {
+    border-color: var(--primary-solid);
+    color: var(--primary-solid);
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: var(--background);
+    border-radius: 0.5rem;
+}
+
+.address-form input {
+    padding: 0.75rem;
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.save-address-btn,
+.cancel-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.save-address-btn {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.cancel-btn {
+    background: var(--background);
+    color: var(--text);
+}
+
+.checkout-sidebar {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: var(--spacing-md);
+    transition: var(--transition);
+}
+
+.place-order-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.place-order-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 968px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+}
